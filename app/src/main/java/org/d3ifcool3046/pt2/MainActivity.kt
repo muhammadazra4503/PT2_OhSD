@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
                 binding.textInput.error = "Enter Name"
             } else {
                 val intent = Intent(this, MenuActivity::class.java)
+                intent.putExtra("name", binding.inputName.text.toString())
                 startActivity(intent)
             }
         }

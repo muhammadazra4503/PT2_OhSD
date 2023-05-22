@@ -10,5 +10,7 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val name = intent.getStringExtra("name")
+        binding.textName.setText(name)
     }
 }
