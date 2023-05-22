@@ -1,12 +1,14 @@
 package org.d3ifcool3046.pt2
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import org.d3ifcool3046.pt2.databinding.ActivityMenuBinding
 
 class MenuActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
