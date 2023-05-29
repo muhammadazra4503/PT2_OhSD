@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import org.d3ifcool3046.pt2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,4 +23,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }
