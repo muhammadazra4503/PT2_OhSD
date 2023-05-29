@@ -49,11 +49,10 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="100"
         android:layout_marginTop="100dp"
+        android:ems="100"
         android:inputType="textPersonName"
-        android:text="Rumus" />
-
+        android:text="Rumus Matematika" />
 
 
 </RelativeLayout>
