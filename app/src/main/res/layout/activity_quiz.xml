@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img">
+
+    <Button
+        android:id="@+id/mudahButton"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:text="@string/button_mudah"
+        android:textColor="@color/black"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/sedangButton"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:text="@string/button_sedang"
+        android:textColor="@color/black"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mudahButton"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/sulitButton"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:text="@string/button_sulit"
+        android:theme="@style/AppTheme"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sedangButton"
+        app:layout_constraintVertical_bias="0.101" />
+</androidx.constraintlayout.widget.ConstraintLayout>

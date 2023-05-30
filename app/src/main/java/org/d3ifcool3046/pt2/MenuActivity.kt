@@ -14,5 +14,14 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
         val name = intent.getStringExtra("name")
         binding.textName.setText(name)
+
+        binding.quizButton.setOnClickListener{
+            val intent = Intent(this, QuizActivity::class.java)
+            startActivity(intent)
+        }
+        binding.materiButton.setOnClickListener{
+            val intent = Intent(this, RumusActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
