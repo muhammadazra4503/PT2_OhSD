@@ -10,6 +10,8 @@
     <string name="button_about">About</string>
     <string name="label">Nama</string>
     <string name="halo">Halo</string>
+    <string name="text_about">About Aplikasi</string>
+    <string name="text_desc_about">Aplikasi dibuat untuk membantu pembelajaran anak SD. Dengan beberapa materi dan penjelasan yang mudah dipahami.</string>
     <string name="text_question">Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!</string>
     <string name="text_answer1">35 cm² dan 27 cm</string>
     <string name="text_answer2">27 cm² dan 35 cm</string>
