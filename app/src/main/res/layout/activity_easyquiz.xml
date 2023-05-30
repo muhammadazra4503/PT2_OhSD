@@ -13,10 +13,10 @@
         android:theme="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123"
+        app:layout_constraintVertical_bias="0.16"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp">
 
@@ -31,6 +31,40 @@
             android:textColor="#1E1C1C"
             android:textSize="20sp"
             tools:ignore="TextSizeCheck" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:theme="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|right"
+            android:gravity="center|right|left"
+            android:text="TextView"
+            tools:text="0/10" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
@@ -49,21 +83,6 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <TextView
-        android:id="@+id/tvOpsi"
-        android:layout_width="311dp"
-        android:layout_height="58dp"
-        android:background="@drawable/default_option_border"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="@string/text_answer3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvOpsi2"
-        app:layout_constraintVertical_bias="0.146" />
-
-    <TextView
         android:id="@+id/tvOpsi2"
         android:layout_width="311dp"
         android:layout_height="58dp"
@@ -78,8 +97,23 @@
         app:layout_constraintTop_toBottomOf="@+id/tvOpsi1"
         app:layout_constraintVertical_bias="0.104" />
 
+    <TextView
+        android:id="@+id/tvOpsi3"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:background="@drawable/default_option_border"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/text_answer3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpsi2"
+        app:layout_constraintVertical_bias="0.146" />
+
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/submitButton"
         android:layout_width="136dp"
         android:layout_height="55dp"
         android:background="@drawable/border"
@@ -89,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvOpsi"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpsi3"
         app:layout_constraintVertical_bias="0.416" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

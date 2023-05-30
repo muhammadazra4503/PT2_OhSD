@@ -5,4 +5,5 @@ data class Question(
     val opsiSatu: String,
     val opsiDua: String,
     val opsiTiga: String,
+    val jawaban: Int,
 )
