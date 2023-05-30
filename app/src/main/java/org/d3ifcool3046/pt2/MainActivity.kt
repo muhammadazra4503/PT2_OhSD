@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonMasuk.setOnClickListener{
+        binding.buttonMasuk.setOnClickListener {
             if (TextUtils.isEmpty(binding.inputName.text.toString())) {
                 binding.textInput.error = "Enter Name"
             } else {
