@@ -13,7 +13,7 @@ class PersegiPanjangActivity : AppCompatActivity() {
         val Rumus = intent.getParcelableExtra<Rumus>("rumus")
         if (Rumus != null) {
             val textView: TextView = findViewById(R.id.ppatext)
-            val imageView: ImageView = findViewById(R.id.ppaimg)
+            val imageView: ImageView = findViewById(R.id.ppimg)
 
             textView.text = Rumus.name
             imageView.setImageResource(Rumus.image)
