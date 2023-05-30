@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "org.d3ifcool3046.pt2"
-        minSdk 21
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
