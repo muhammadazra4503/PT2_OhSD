@@ -4,26 +4,35 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class RumusActivity : AppCompatActivity() {
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var rumusList: ArrayList<Rumus>
+    private lateinit var rumusAdapter: RumusAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rumus)
+
+        recyclerView = findViewById(R.id.rv)
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
+        rumusList = ArrayList()
+
+        rumusList.add(Rumus(R.drawable.kotak, "Kotak"))
+
+        rumusAdapter = RumusAdapter(rumusList)
+        recyclerView.adapter = rumusAdapter
+
+        rumusAdapter.onItemClick = {
+            val intent = Intent(this, KotakActivity::class.java)
+            intent.putExtra("rumus", it)
+            startActivity(intent)
+        }
+
+        }
     }
-    fun panggil(view: View?) {
-        val intent = Intent(this@RumusActivity, LingkaranActivity::class.java)
-        startActivity(intent)
-    }
-    fun Segitiga(view: View?) {
-        val intent = Intent(this@RumusActivity, SegitigaActivity::class.java)
-        startActivity(intent)
-    }
-    fun Kotak(view: View?) {
-        val intent = Intent(this@RumusActivity, KotakActivity::class.java)
-        startActivity(intent)
-    }
-    fun PersegiPanjang(view: View?) {
-        val intent = Intent(this@RumusActivity, PersegiPanjangActivity::class.java)
-        startActivity(intent)
-    }
-}
+
