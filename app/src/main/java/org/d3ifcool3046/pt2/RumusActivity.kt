@@ -44,6 +44,17 @@ class RumusActivity : AppCompatActivity() {
             intent.putExtra("rumus", it)
             startActivity(intent)
         }
+
+        rumusAdapter.onItemClick = {
+            val intent = Intent(this, SegitigaActivity::class.java)
+            intent.putExtra("rumus", it)
+            startActivity(intent)
+        }
+        rumusAdapter.onItemClick = {
+            val intent = Intent(this, PersegiPanjangActivity::class.java)
+            intent.putExtra("rumus", it)
+            startActivity(intent)
+        }
     }
 }
 
