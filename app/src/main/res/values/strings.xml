@@ -14,6 +14,5 @@
     <string name="text_answer1">35 cm² dan 27 cm</string>
     <string name="text_answer2">27 cm² dan 35 cm</string>
     <string name="text_answer3">30 cm² dan 25 cm</string>
-    <string name="text_answer4">25 cm² dan 30 cm</string>
     <string name="submit_button">Submit</string>
 </resources>
