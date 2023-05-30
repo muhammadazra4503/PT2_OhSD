@@ -23,6 +23,11 @@ class RumusActivity : AppCompatActivity() {
         rumusList = ArrayList()
 
         rumusList.add(Rumus(R.drawable.kotak, "Kotak"))
+        rumusList.add(Rumus(R.drawable.bulat, "Lingkaran"))
+        rumusList.add(Rumus(R.drawable.tri, "Segitiga"))
+        rumusList.add(Rumus(R.drawable.pp, "Persegi Panjang"))
+
+
 
         rumusAdapter = RumusAdapter(rumusList)
         recyclerView.adapter = rumusAdapter
@@ -31,8 +36,14 @@ class RumusActivity : AppCompatActivity() {
             val intent = Intent(this, KotakActivity::class.java)
             intent.putExtra("rumus", it)
             startActivity(intent)
-        }
+
 
         }
+        rumusAdapter.onItemClick = {
+            val intent = Intent(this, LingkaranActivity::class.java)
+            intent.putExtra("rumus", it)
+            startActivity(intent)
+        }
     }
+}
 

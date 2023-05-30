@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/background_img"
-    tools:context=".LingkaranActivity">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegitigaActivity">
 
     <ImageView
+        android:id="@+id/segiimg"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:src="@drawable/sgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/segitext"
         android:layout_width="wrap_content"
-        android:layout_height="198dp"
-        android:layout_gravity="center"
-        android:layout_margin="60dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#fff"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/rumussegitiga" />
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segiimg" />
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
