@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MateriActivity"
+    android:background="@drawable/background_img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/segitigaButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/yellow_200"
+            android:contentDescription="Segitiga"
+            android:src="@drawable/triangle" />
+
+        <ImageButton
+            android:id="@+id/persegiPanjangButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/yellow_200"
+            android:contentDescription="Persegi Panjang"
+            android:src="@drawable/rectangle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/lingkaranButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/yellow_200"
+            android:contentDescription="Lingkaran"
+            android:src="@drawable/circle" />
+
+        <ImageButton
+            android:id="@+id/kotakButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="@color/yellow_200"
+            android:contentDescription="Kotak"
+            android:src="@drawable/square" />
+
+    </LinearLayout>
+
+</LinearLayout>
