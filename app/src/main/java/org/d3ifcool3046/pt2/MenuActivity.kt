@@ -2,7 +2,6 @@ package org.d3ifcool3046.pt2
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import org.d3ifcool3046.pt2.databinding.ActivityMenuBinding
 
@@ -21,6 +20,10 @@ class MenuActivity : AppCompatActivity() {
         }
         binding.materiButton.setOnClickListener{
             val intent = Intent(this, RumusActivity::class.java)
+            startActivity(intent)
+        }
+        binding.aboutButton.setOnClickListener{
+            val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
     }

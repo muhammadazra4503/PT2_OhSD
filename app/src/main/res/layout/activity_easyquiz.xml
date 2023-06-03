@@ -63,7 +63,7 @@
             android:layout_height="43dp"
             android:layout_gravity="center|right"
             android:gravity="center|right|left"
-            android:text="TextView"
+            android:text="@string/text_progress"
             tools:text="0/10" />
     </com.google.android.material.card.MaterialCardView>
 

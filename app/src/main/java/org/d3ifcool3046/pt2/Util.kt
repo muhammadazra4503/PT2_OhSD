@@ -1,92 +1,95 @@
 package org.d3ifcool3046.pt2
 
 import org.d3ifcool3046.pt2.model.Question
+import java.util.*
+import kotlin.collections.ArrayList
+
 
 object Util {
 
     fun setFixQuestion(): ArrayList<Question> {
-        val questionList = ArrayList<Question>()
-
+        val quizList = ArrayList<Question>()
         val question1 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "1",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
             1)
-        questionList.add(question1)
+        quizList.add(question1)
 
         val question2 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "2",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
-            3)
-        questionList.add(question2)
+            2)
+        quizList.add(question2)
 
         val question3 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "3",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
             2)
-        questionList.add(question3)
+        quizList.add(question3)
 
         val question4 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "4",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
-            1)
-        questionList.add(question4)
+            2)
+        quizList.add(question4)
 
         val question5 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "5",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
-            1)
-        questionList.add(question5)
+            2)
+        quizList.add(question5)
 
         val question6 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "6",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
-            1)
-        questionList.add(question6)
+            2)
+        quizList.add(question6)
 
         val question7 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
-            "35 cm² dan 27 cm",
-            "27 cm² dan 35 cm",
-            "30 cm² dan 25 cm",
-            1)
-        questionList.add(question7)
-
-        val question8 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "7",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
             2)
-        questionList.add(question8)
+
+        quizList.add(question7)
+        val question8 = Question(
+            "8",
+            "35 cm² dan 27 cm",
+            "27 cm² dan 35 cm",
+            "30 cm² dan 25 cm",
+            2)
+        quizList.add(question8)
 
         val question9 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
-            "35 cm² dan 27 cm",
-            "27 cm² dan 35 cm",
-            "30 cm² dan 25 cm",
-            3)
-        questionList.add(question9)
-
-        val question10 = Question(
-            "Sebuah segitiga memiliki ukuran sisi alas 10 cm dan tinggi 7 cm. Jika ukuran sisi-sisi miringnya adalah 8 cm dan 9 cm, hitunglah berapa luas dan keliling segitiga tersebut!",
+            "9",
             "35 cm² dan 27 cm",
             "27 cm² dan 35 cm",
             "30 cm² dan 25 cm",
             2)
-        questionList.add(question10)
+        quizList.add(question9)
 
-        return questionList
+        val question10 = Question(
+            "10",
+            "35 cm² dan 27 cm",
+            "27 cm² dan 35 cm",
+            "30 cm² dan 25 cm",
+            2)
+        quizList.add(question10)
+
+        quizList.shuffle()
+        return quizList
     }
 }
