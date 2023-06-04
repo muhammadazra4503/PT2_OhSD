@@ -44,6 +44,10 @@
             android:exported="false"
             android:label="AboutActivity" />
         <activity
+            android:name=".MateriActivity"
+            android:exported="false"
+            android:label="MateriActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

@@ -19,7 +19,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.materiButton.setOnClickListener{
-            val intent = Intent(this, RumusActivity::class.java)
+            val intent = Intent(this, MateriActivity::class.java)
             startActivity(intent)
         }
         binding.aboutButton.setOnClickListener{
