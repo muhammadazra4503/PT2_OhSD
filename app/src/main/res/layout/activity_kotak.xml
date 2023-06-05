@@ -13,7 +13,8 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewKotak"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
 
         <ImageView
             android:id="@+id/kotakimg"
@@ -26,13 +27,13 @@
             android:id="@+id/kotaktext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:layout_marginTop="16dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_below="@id/kotakimg"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Adapun untuk mengkalkulasikan volume atau isi dari sebuah Persegi, maka sobat mesti mengenali dimensi panjang, lebar, dan juga tinggi dari kotak tersebut. Adapun untuk menghitung volume kotak sebagai berikut Volume = panjang x lebar x tinggi Rumus ini juga ditulis secara singkat yaitu; V = P x L x T. Perlu diamati dalam menjumlah suatu volume kotak yang memakai rumus di atas maka dimensi panjang, lebar dan tingginya itu mesti dalam satuan yang serupa ya. Satuan volume ini yaitu satuan panjang kubik contohnya mirip centimeter kubik (cm3), millimeter kubik (mm3), meter kubik (m3)."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </ScrollView>
