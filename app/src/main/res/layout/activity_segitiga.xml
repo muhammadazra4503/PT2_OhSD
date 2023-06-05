@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SegitigaActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/segiimg"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:src="@drawable/sgi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/segitext"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="16dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/segiimg" />
+        tools:context=".SegitigaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerViewSegitiga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/segiimg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/sgi"
+            android:layout_below="@id/youtubePlayerViewSegitiga" />
+
+        <TextView
+            android:id="@+id/segitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/luas_segitiga_sama_sisi_yaitu_l_a_t_atau_l_a_4_3_keterangan_l_luas_a_alas_t_tinggi_keliling_segitiga_sama_sisi_yaitu_k_sisi_a_sisi_b_sisi_c_atau_k_3_sisi_keterangan_k_keliling_cara_mencari_tinggi_segitiga_sama_sisi_yaitu_t_2_l_a_atau_t_sisi_3_keterangan_t_tinggi_l_luas_a_alas_rumus_mencari_alas_segitiga_sama_sisi_yaitu_a_2_l_t_keterangan_a_alas_l_luas_t_tinggi"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/segiimg"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

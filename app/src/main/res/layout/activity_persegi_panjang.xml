@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PersegiPanjangActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/ppimg"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:src="@drawable/ppp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/ppatext"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="16dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ppimg" />
+        tools:context=".PersegiPanjangActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerViewPersegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/persegiimg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/ppp"
+            android:layout_below="@id/youtubePlayerViewPersegi" />
+
+        <TextView
+            android:id="@+id/persegitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hai_teman_teman_di_video_kali_ini_kita_akan_belajar_untuk_menghitung_luas_persegi_panjang_untuk_rumus_luas_persegi_panjang_adalah_l_p_x_l_luas_panjang_x_lebar_bentuk_rumus_keliling_persegi_panjang_adalah_k_p_l_p_l_atau_k_2x_p_l"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/persegiimg"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

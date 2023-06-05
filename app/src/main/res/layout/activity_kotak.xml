@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".KotakActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/kotakimg"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:src="@drawable/rk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/kotaktext"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/kotakimg" />
+        tools:context=".KotakActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerViewKotak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/kotakimg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/rk"
+            android:layout_below="@id/youtubePlayerViewKotak" />
+
+        <TextView
+            android:id="@+id/kotaktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kotakimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Adapun untuk mengkalkulasikan volume atau isi dari sebuah Persegi, maka sobat mesti mengenali dimensi panjang, lebar, dan juga tinggi dari kotak tersebut. Adapun untuk menghitung volume kotak sebagai berikut Volume = panjang x lebar x tinggi Rumus ini juga ditulis secara singkat yaitu; V = P x L x T. Perlu diamati dalam menjumlah suatu volume kotak yang memakai rumus di atas maka dimensi panjang, lebar dan tingginya itu mesti dalam satuan yang serupa ya. Satuan volume ini yaitu satuan panjang kubik contohnya mirip centimeter kubik (cm3), millimeter kubik (mm3), meter kubik (m3)."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>
