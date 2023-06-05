@@ -1,23 +1,20 @@
 package org.d3ifcool3046.pt2
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.provider.SyncStateContract.Constants
-import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
-import org.d3ifcool3046.pt2.databinding.ActivityEasyquizBinding
+import org.d3ifcool3046.pt2.databinding.ActivityHardquizBinding
 import org.d3ifcool3046.pt2.model.Question
 
-
-class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
-    private lateinit var binding: ActivityEasyquizBinding
+class HardQuizActivity: AppCompatActivity(), View.OnClickListener {
+    private lateinit var binding: ActivityHardquizBinding
 
     private var mPosisiSekarang = 1
     private var mListPertanyaan: ArrayList<Question>? = null
@@ -27,18 +24,18 @@ class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityEasyquizBinding.inflate(layoutInflater)
+        binding = ActivityHardquizBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        mListPertanyaan = Util.setEasyQuestion()
+        mListPertanyaan = Util.setHardQuestion()
         mNama = intent.getStringExtra(Util.NAME)
         setQuestion()
         binding.tvOpsi1.setOnClickListener(this)
         binding.tvOpsi2.setOnClickListener(this)
         binding.tvOpsi3.setOnClickListener(this)
         binding.submitButton.setOnClickListener(this)
-
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setQuestion(){
         val pertanyaan: Question = mListPertanyaan!![mPosisiSekarang - 1]
         defaultOptionView()
@@ -103,6 +100,7 @@ class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.tvOpsi1 ->
@@ -118,20 +116,19 @@ class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
                         mPosisiSekarang <= mListPertanyaan!!.size ->{
                             setQuestion()
                         }else ->{
-                            val intent = Intent(this, ResultActivity::class.java)
-                            intent.putExtra(Util.NAME, mNama)
-                            intent.putExtra(Util.JAWABAN_BENAR, mJawabanBenar)
-                            intent.putExtra(Util.TOTAL_PERTANYAAN, mListPertanyaan!!.size)
-                            startActivity(intent)
-                            finish()
-                        }
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra(Util.NAME, mNama)
+                        intent.putExtra(Util.JAWABAN_BENAR, mJawabanBenar)
+                        intent.putExtra(Util.TOTAL_PERTANYAAN, mListPertanyaan!!.size)
+                        startActivity(intent)
+                        finish()
+                    }
                     }
                 }else{
                     val pertanyaan = mListPertanyaan?.get(mPosisiSekarang-1)
                     if(pertanyaan!!.jawaban != opsiDipilih){
                         answerView(opsiDipilih, R.drawable.wrong_border)
                     }else{
-                        mJawabanBenar++
                         answerView(opsiDipilih, R.drawable.correct_border)
                     }
                     if (mPosisiSekarang == mListPertanyaan!!.size) binding.submitButton.text = "Selesai"

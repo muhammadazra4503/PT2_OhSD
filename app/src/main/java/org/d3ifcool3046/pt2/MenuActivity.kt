@@ -11,12 +11,14 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val name = intent.getStringExtra("name")
+        val name = intent.getStringExtra(Util.NAME)
         binding.textName.setText(name)
 
         binding.quizButton.setOnClickListener{
             val intent = Intent(this, QuizActivity::class.java)
+            intent.putExtra(Util.NAME, binding.textName.text.toString())
             startActivity(intent)
+            finish()
         }
         binding.materiButton.setOnClickListener{
             val intent = Intent(this, RumusActivity::class.java)

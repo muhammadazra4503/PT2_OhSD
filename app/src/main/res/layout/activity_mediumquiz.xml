@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="366dp"
+        android:layout_height="252dp"
+        android:theme="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="332dp"
+            android:layout_height="209dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/text_question"
+            android:textColor="#1E1C1C"
+            android:textSize="20sp"
+            tools:ignore="TextSizeCheck" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:theme="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|right"
+            android:gravity="center|right|left"
+            android:text="@string/text_progress"
+            tools:text="0/10" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvOpsi1"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:background="@drawable/default_option_border"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/text_answer1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/tvOpsi2"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:background="@drawable/default_option_border"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/text_answer2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpsi1"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/tvOpsi3"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:background="@drawable/default_option_border"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/text_answer3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpsi2"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:background="@drawable/border"
+        android:text="@string/submit_button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOpsi3"
+        app:layout_constraintVertical_bias="0.416" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

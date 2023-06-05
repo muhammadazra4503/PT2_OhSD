@@ -29,20 +29,32 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false"
-            android:label="MenuActivity"
+            android:label="Menu"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".QuizActivity"
             android:exported="false"
-            android:label="QuizActivity" />
+            android:label="Quiz" />
         <activity
             android:name=".EasyQuizActivity"
             android:exported="false"
-            android:label="EasyQuizActivity" />
+            android:label="Easy Quiz" />
+        <activity
+            android:name=".MediumQuizActivity"
+            android:exported="false"
+            android:label="Medium Quiz" />
+        <activity
+            android:name=".HardQuizActivity"
+            android:exported="false"
+            android:label="Hard Quiz" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false"
+            android:label="Result" />
         <activity
             android:name=".AboutActivity"
             android:exported="false"
-            android:label="AboutActivity" />
+            android:label="About" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
