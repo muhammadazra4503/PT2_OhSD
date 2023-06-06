@@ -1,5 +1,6 @@
 package org.d3ifcool3046.pt2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import org.d3ifcool3046.pt2.databinding.ActivityEasyquizBinding
@@ -18,6 +19,11 @@ class ResultActivity: AppCompatActivity() {
         val score = intent.getIntExtra(Util.JAWABAN_BENAR,0)
         val totalPertanyaan = intent.getIntExtra(Util.TOTAL_PERTANYAAN,0)
         binding.tvScore.text = "Kamu menyelesaikan quiz dengan score $score dari $totalPertanyaan!"
+        binding.doneButton.setOnClickListener{
+            startActivity(Intent(this,MenuActivity::class.java))
+            intent.putExtra(Util.NAME, binding.tvName.text.toString())
+            finish()
+        }
     }
 
 }
