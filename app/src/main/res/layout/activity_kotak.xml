@@ -8,32 +8,83 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".KotakActivity">
+        tools:context=".SegitigaActivity">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewKotak"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext4"/>
 
         <ImageView
-            android:id="@+id/kotakimg"
+            android:id="@+id/persegiimg"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/rk"
-            android:layout_below="@id/youtubePlayerViewKotak" />
+            android:src="@drawable/pps"
+            />
 
         <TextView
-            android:id="@+id/kotaktext"
+            android:id="@+id/persegitext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/kotakimg"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:text="Adapun untuk mengkalkulasikan volume atau isi dari sebuah Persegi, maka sobat mesti mengenali dimensi panjang, lebar, dan juga tinggi dari kotak tersebut. Adapun untuk menghitung volume kotak sebagai berikut Volume = panjang x lebar x tinggi Rumus ini juga ditulis secara singkat yaitu; V = P x L x T. Perlu diamati dalam menjumlah suatu volume kotak yang memakai rumus di atas maka dimensi panjang, lebar dan tingginya itu mesti dalam satuan yang serupa ya. Satuan volume ini yaitu satuan panjang kubik contohnya mirip centimeter kubik (cm3), millimeter kubik (mm3), meter kubik (m3)."
+            android:layout_below="@id/persegiimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-1dp"
+            android:text="Persegi atau bujur sangkar adalah bangun datar dua dimensi yang dibentuk oleh empat buah rusuk yang sama panjang dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Luas  = s × s "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Keliling  = 4 x s"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Rumus sisi persegi: S = √L"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
     </RelativeLayout>
 </ScrollView>

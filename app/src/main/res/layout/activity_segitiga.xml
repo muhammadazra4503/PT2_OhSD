@@ -13,26 +13,94 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewSegitiga"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext5"/>
 
         <ImageView
-            android:id="@+id/segiimg"
+            android:id="@+id/persegiimg"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:src="@drawable/sgi"
-            android:layout_below="@id/youtubePlayerViewSegitiga" />
+            />
 
         <TextView
-            android:id="@+id/segitext"
+            android:id="@+id/persegitext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="luas segitiga sama sisi yaitu l a t atau l a 4 3 keterangan l luas a alas t tinggi keliling segitiga sama sisi yaitu k sisi a sisi b sisi c atau k 3 sisi keterangan k keliling cara mencari tinggi segitiga sama sisi yaitu t 2 l a atau t sisi 3 keterangan t tinggi l luas a alas rumus mencari alas segitiga sama sisi yaitu a 2 l t keterangan a alas l luas t tinggi"
-            android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:textStyle="bold"
+            android:layout_below="@id/persegiimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-1dp"
+            android:text="Sebuah segitiga adalah poligon dengan tiga ujung dan tiga simpul. Ini adalah salah satu bentuk dasar dalam geometri. Segitiga dengan simpul A, B, dan C dilambangkan"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:layout_below="@id/segiimg"
-            android:layout_centerHorizontal="true" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Luas (W) W = ½ × a × h "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Keliling (Kll) Kll = a + b + c "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Tinggi (t) t = (2 × luas) ÷ a "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Alas (a) a = (2 × luas) ÷ t "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
     </RelativeLayout>
 </ScrollView>

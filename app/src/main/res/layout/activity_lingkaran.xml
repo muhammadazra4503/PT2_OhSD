@@ -8,31 +8,67 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".LingkaranActivity">
+        tools:context=".SegitigaActivity">
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewLingkaran"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext3"/>
 
         <ImageView
-            android:id="@+id/lingimg"
+            android:id="@+id/persegiimg"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/lingkaran"
-            android:layout_below="@id/youtubePlayerViewLingkaran" />
+            android:src="@drawable/lk"
+            />
 
         <TextView
-            android:id="@+id/lingtext"
+            android:id="@+id/persegitext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Luas lingkaran dapat dihitung dengan mengetahui nilai Pi (π) dan jari-jari lingkaran (r). Rumus luas lingkaran adalah L = π × r × r . L merupakan lambang luas lingkaran. Sedangkan nilai π yaitu 22/7 atau 3,14."
-            android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:textStyle="bold"
+            android:layout_below="@id/persegiimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-1dp"
+            android:text="Lingkaran adalah bentuk yang terdiri dari semua titik dalam bidang yang berjarak tertentu dari titik tertentu, pusat; ekuivalennya adalah kurva yang dilacak oleh titik yang bergerak dalam bidang sehingga jaraknya dari titik tertentu adalah konstan"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:layout_below="@id/lingimg"
-            android:layout_centerHorizontal="true" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Rumus luas lingkaran: L = π × r × r"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Keliling lingkaran = π (22/7 atau 3,14) x Diameter lingkaran (d)"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
     </RelativeLayout>
 </ScrollView>

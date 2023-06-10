@@ -13,26 +13,93 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewPersegi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext5"/>
 
         <ImageView
             android:id="@+id/persegiimg"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/ppp"
-            android:layout_below="@id/youtubePlayerViewPersegi" />
+            android:src="@drawable/pp2"
+            />
 
         <TextView
             android:id="@+id/persegitext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hai teman teman di video kali ini kita akan belajar untuk menghitung luas persegi panjang untuk rumus luas persegi panjang adalah l p x l luas panjang x lebar bentuk rumus keliling persegi panjang adalah k p l p l atau k 2x p l"
-            android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
             android:layout_below="@id/persegiimg"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-1dp"
+            android:text="Persegi panjang adalah bangun datar dua dimensi yang dibentuk oleh dua pasang sisi yang masing-masing sama panjang dan sejajar dengan pasangannya, dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Luas (W) W = w x w "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Keliling (K) K = 2 x (w + l) "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/persegitext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Panjang (w) p = L ÷ l / p = (K ÷ 2) -l "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/persegitext5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persegitext4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:text="Lebar (l) l = L ÷ p / l = (K ÷ 2) -p"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
     </RelativeLayout>
 </ScrollView>
