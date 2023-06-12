@@ -5,102 +5,128 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/background_img"
         tools:context=".SegitigaActivity">
+
+        <TextView
+            android:id="@+id/shape"
+            android:layout_width="367dp"
+            android:layout_height="1086dp"
+            android:background="@drawable/round_rectangle"
+            app:layout_constraintBottom_toBottomOf="@+id/youtubePlayerViewSegitiga"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="379dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtubePlayerViewSegitiga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext5"/>
+            android:layout_width="352dp"
+            android:layout_height="187dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/tvVideo" />
+
+        <TextView
+            android:id="@+id/title_materi"
+            android:layout_width="308dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Segitiga"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/persegiimg"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/sgi"
-            />
+            android:id="@+id/imageView3"
+            android:layout_width="261dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:srcCompat="@drawable/tri" />
 
         <TextView
-            android:id="@+id/persegitext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/persegiimg"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="-1dp"
-            android:text="Sebuah segitiga adalah poligon dengan tiga ujung dan tiga simpul. Ini adalah salah satu bentuk dasar dalam geometri. Segitiga dengan simpul A, B, dan C dilambangkan"
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/textView3"
+            android:layout_width="353dp"
+            android:layout_height="311dp"
+            android:layout_marginTop="20dp"
+            android:text="Segitiga merupakan bangun datar yang dibatasi oleh tiga sisi yang mana setiap sisinya memiliki panjang yang sama ataupun berbeda. Berikut ciri-ciri segitiga: \n\n1. Tersusun dari tiga titik yang di setiap sudutnya dengan total 180 derajat
+            \n2. Tersusun dari tiga garis lurus
+            \n3. Memiliki sisi alas
+            \n4. Memiliki tinggi
+            \n5. Memiliki luas dan keliling"
+            android:textAllCaps="false"
+            android:textColor="#090908"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
-            android:id="@+id/persegitext2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Luas (W) W = ½ × a × h "
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/tvRumus"
+            android:layout_width="350dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_rectangle"
+            android:text="  Rumus"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
-            android:id="@+id/persegitext3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Keliling (Kll) Kll = a + b + c "
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/tvVideo"
+            android:layout_width="350dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_rectangle"
+            android:text="  Video Penjelasan"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/tvIsiRumus" />
 
         <TextView
-            android:id="@+id/persegitext4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext3"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Tinggi (t) t = (2 × luas) ÷ a "
+            android:id="@+id/tvIsiRumus"
+            android:layout_width="397dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="8dp"
+            android:text="Rumus Keliling Segitiga:\n 3s atau s + s + s \n\n Rumus Luas Segitiga:\n½ x a x t "
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/persegitext5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext4"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Alas (a) a = (2 × luas) ÷ t "
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRumus" />
 
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
