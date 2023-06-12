@@ -4,10 +4,10 @@ import org.d3ifcool3046.pt2.model.Question
 import kotlin.collections.ArrayList
 
 object Util {
-
     const val NAME: String = "name"
     const val TOTAL_PERTANYAAN: String = "total_pertanyaan"
     const val JAWABAN_BENAR: String = "jawaban_benar"
+
     private val quizList = ArrayList<Question>()
     private val quizList2 = ArrayList<Question>()
     private val quizList3 = ArrayList<Question>()
@@ -266,5 +266,10 @@ object Util {
 
         quizList3.shuffle()
         return quizList3
+    }
+    fun resetQuestions() {
+        setEasyQuestion().clear()
+        setMediumQuestion().clear()
+        setHardQuestion().clear()
     }
 }

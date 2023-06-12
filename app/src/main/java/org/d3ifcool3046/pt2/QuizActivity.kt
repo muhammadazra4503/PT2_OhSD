@@ -19,18 +19,21 @@ class QuizActivity:AppCompatActivity() {
             val intent = Intent(this, EasyQuizActivity::class.java)
             intent.putExtra(Util.NAME, name)
             startActivity(intent)
+            Util.resetQuestions()
             finish()
         }
         binding.sedangButton.setOnClickListener{
-            val intent = Intent(this, EasyQuizActivity::class.java)
+            val intent = Intent(this, MediumQuizActivity::class.java)
             intent.putExtra(Util.NAME, name)
             startActivity(intent)
+            Util.resetQuestions()
             finish()
         }
         binding.sulitButton.setOnClickListener{
-            val intent = Intent(this, EasyQuizActivity::class.java)
+            val intent = Intent(this, HardQuizActivity::class.java)
             intent.putExtra(Util.NAME, name)
             startActivity(intent)
+            Util.resetQuestions()
             finish()
         }
     }
