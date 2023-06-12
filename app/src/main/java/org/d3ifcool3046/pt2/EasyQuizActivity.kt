@@ -15,7 +15,6 @@ import androidx.core.content.ContextCompat
 import org.d3ifcool3046.pt2.databinding.ActivityEasyquizBinding
 import org.d3ifcool3046.pt2.model.Question
 
-
 class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityEasyquizBinding
 
@@ -52,8 +51,6 @@ class EasyQuizActivity: AppCompatActivity(), View.OnClickListener {
         binding.tvOpsi1.text = pertanyaan.opsiSatu
         binding.tvOpsi2.text = pertanyaan.opsiDua
         binding.tvOpsi3.text = pertanyaan.opsiTiga
-
-
     }
 
     private fun defaultOptionView(){

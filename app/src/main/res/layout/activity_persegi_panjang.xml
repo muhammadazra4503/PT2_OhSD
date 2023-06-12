@@ -5,101 +5,123 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".PersegiPanjangActivity">
+        android:background="@drawable/background_img"
+        tools:context=".SegitigaActivity">
+
+        <TextView
+            android:id="@+id/shape"
+            android:layout_width="389dp"
+            android:layout_height="1099dp"
+            android:background="@drawable/round_rectangle"
+            app:layout_constraintBottom_toBottomOf="@+id/youtubePlayerViewPersegiPanjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="379dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/youtubePlayerViewPersegi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext5"/>
+            android:id="@+id/youtubePlayerViewPersegiPanjang"
+            android:layout_width="352dp"
+            android:layout_height="187dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/tvVideo" />
+
+        <TextView
+            android:id="@+id/title_materi"
+            android:layout_width="308dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Persegi Panjang"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/persegiimg"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/pp2"
-            />
+            android:id="@+id/imageView3"
+            android:layout_width="251dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:srcCompat="@drawable/persegi_panjang" />
 
         <TextView
-            android:id="@+id/persegitext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/persegiimg"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="-1dp"
-            android:text="Persegi panjang adalah bangun datar dua dimensi yang dibentuk oleh dua pasang sisi yang masing-masing sama panjang dan sejajar dengan pasangannya, dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku."
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/textView3"
+            android:layout_width="340dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="40dp"
+            android:text="Persegi panjang adalah suatu segi empat dengan sisi-sisi yang berhadapan sejajar dan sama panjang, serta semua sudutnya siku-siku.\n \nSeperti kita lihat gambar diatas bahwa setiap masing-masing diagonalnya sama panjang "
+            android:textAllCaps="false"
+            android:textColor="#090908"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
-            android:id="@+id/persegitext2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Luas (W) W = w x w "
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/tvRumus"
+            android:layout_width="371dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/default_rectangle"
+            android:text="  Rumus"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
-            android:id="@+id/persegitext3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Keliling (K) K = 2 x (w + l) "
-            android:textAlignment="center"
-            android:textColor="@color/black"
+            android:id="@+id/tvVideo"
+            android:layout_width="371dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_rectangle"
+            android:text="  Video Penjelasan"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/persegitext4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext3"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Panjang (w) p = L ÷ l / p = (K ÷ 2) -l "
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintEnd_toEndOf="@+id/shape"
+            app:layout_constraintStart_toStartOf="@+id/shape"
+            app:layout_constraintTop_toBottomOf="@+id/tvIsiRumus" />
 
         <TextView
-            android:id="@+id/persegitext5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/persegitext4"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="118dp"
-            android:text="Lebar (l) l = L ÷ p / l = (K ÷ 2) -p"
+            android:id="@+id/tvIsiRumus"
+            android:layout_width="397dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="8dp"
+            android:text="Rumus Keliling Persegi Panjang:\n p x l = p.l \n\n Rumus Luas Persegi Panjang:\n(2 x p) +(2 x ℓ) "
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textColor="#0E0C0C"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRumus" />
 
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

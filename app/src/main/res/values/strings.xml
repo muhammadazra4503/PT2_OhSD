@@ -21,4 +21,11 @@
     <string name="button_selesai">Selesai</string>
     <string name="text_score">Kamu menyelesaikan quiz dengan score 5 dari 10!</string>
     <string name="text_name">Jon Doe</string>
+
+    <string-array name="my_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+
 </resources>

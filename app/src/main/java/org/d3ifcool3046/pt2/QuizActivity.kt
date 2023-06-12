@@ -22,12 +22,16 @@ class QuizActivity:AppCompatActivity() {
             finish()
         }
         binding.sedangButton.setOnClickListener{
-            val intent = Intent(this, MediumQuizActivity::class.java)
+            val intent = Intent(this, EasyQuizActivity::class.java)
+            intent.putExtra(Util.NAME, name)
             startActivity(intent)
+            finish()
         }
         binding.sulitButton.setOnClickListener{
-            val intent = Intent(this, HardQuizActivity::class.java)
+            val intent = Intent(this, EasyQuizActivity::class.java)
+            intent.putExtra(Util.NAME, name)
             startActivity(intent)
+            finish()
         }
     }
 }

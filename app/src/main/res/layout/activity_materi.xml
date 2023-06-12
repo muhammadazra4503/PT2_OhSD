@@ -48,19 +48,21 @@
                         android:id="@+id/segitigaButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:background="#F44336"
+                        android:background="@drawable/round_rectangle"
                         android:contentDescription="Segitiga"
-                        android:scaleType="fitCenter"
+                        android:scaleType="centerInside"
                         android:src="@drawable/triangle" />
 
                     <ImageButton
                         android:id="@+id/persegiPanjangButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:background="#FFEB3B"
+                        android:background="@drawable/round_rectangle"
                         android:contentDescription="Persegi Panjang"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/rectangle" />
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rectangle"
+                        android:textAlignment="viewEnd"
+                        android:textDirection="ltr" />
 
                 </LinearLayout>
 
@@ -73,18 +75,18 @@
                         android:id="@+id/lingkaranButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:background="@color/teal_200"
+                        android:background="@drawable/round_rectangle"
                         android:contentDescription="Lingkaran"
-                        android:scaleType="fitCenter"
+                        android:scaleType="centerInside"
                         android:src="@drawable/circle" />
 
                     <ImageButton
                         android:id="@+id/kotakButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:background="#2196F3"
+                        android:background="@drawable/round_rectangle"
                         android:contentDescription="Kotak"
-                        android:scaleType="fitCenter"
+                        android:scaleType="centerInside"
                         android:src="@drawable/square" />
 
                 </LinearLayout>

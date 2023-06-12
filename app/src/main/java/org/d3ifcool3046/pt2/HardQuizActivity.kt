@@ -50,7 +50,6 @@ class HardQuizActivity: AppCompatActivity(), View.OnClickListener {
         binding.tvOpsi2.text = pertanyaan.opsiDua
         binding.tvOpsi3.text = pertanyaan.opsiTiga
 
-
     }
 
     private fun defaultOptionView(){
@@ -129,6 +128,7 @@ class HardQuizActivity: AppCompatActivity(), View.OnClickListener {
                     if(pertanyaan!!.jawaban != opsiDipilih){
                         answerView(opsiDipilih, R.drawable.wrong_border)
                     }else{
+                        mJawabanBenar++
                         answerView(opsiDipilih, R.drawable.correct_border)
                     }
                     if (mPosisiSekarang == mListPertanyaan!!.size) binding.submitButton.text = "Selesai"

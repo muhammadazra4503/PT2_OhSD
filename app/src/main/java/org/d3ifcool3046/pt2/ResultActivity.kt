@@ -20,10 +20,10 @@ class ResultActivity: AppCompatActivity() {
         val totalPertanyaan = intent.getIntExtra(Util.TOTAL_PERTANYAAN,0)
         binding.tvScore.text = "Kamu menyelesaikan quiz dengan score $score dari $totalPertanyaan!"
         binding.doneButton.setOnClickListener{
-            startActivity(Intent(this,MenuActivity::class.java))
+            val intent = Intent(this, MenuActivity::class.java)
             intent.putExtra(Util.NAME, binding.tvName.text.toString())
+            startActivity(intent)
             finish()
         }
     }
-
 }
